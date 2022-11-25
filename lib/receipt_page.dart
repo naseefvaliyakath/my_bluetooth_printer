@@ -26,6 +26,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
                 setState(() {
                   address = selected.address;
                   print(selected.type);
+                  print(address);
                 });
               }
             },
@@ -131,7 +132,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
                 controller?.print(address: selectedAddress);
               }*/
             print(address);
-              controller?.print(address: '66:32:92:88:A0:92');
+              controller?.print(address: address!);
             },
             child: const Text('PRINT'),
           ),
